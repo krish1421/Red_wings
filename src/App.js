@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signups from "./components/Signup";
 import MeraSignup from "./components/MeraSignup";
 import Home from "./components/home";
+import Home_one from "./components/Home_one";
 
 function App() {
   // const[meraname, setMeraname] = React.useState("")
@@ -23,7 +24,7 @@ function App() {
           <Route>
             <Route path="/" element={<Login />} />
             <Route path="/signup" element={<MeraSignup />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<Home_one />} />
           </Route>
         </Routes>
       </BrowserRouter>
