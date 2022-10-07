@@ -48,7 +48,7 @@ export default function MeraSignup()  {
         axios.post('http://127.0.0.1:8000/api/register/', payload)
             .then(function (response) {
                 console.log(response);
-                console.log("success")
+                alert("user created successfully")
             })
             .catch(function (error) {
                 console.log(error);
