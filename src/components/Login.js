@@ -26,7 +26,6 @@ export default function Login() {
 				window.location="/home"
 			})
 			.catch(function (error) {
-				debugger
 				console.log(error);
 			});
 	}
