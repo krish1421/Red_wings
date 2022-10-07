@@ -22,8 +22,8 @@ export default function Login() {
 		}
 		axios.post('http://127.0.0.1:8000/api/login/', payload)
 			.then(function (response) {
-				debugger
-				console.log(response);
+				window.localStorage.setItem('Token',response.data.access)
+				window.location="/home"
 			})
 			.catch(function (error) {
 				debugger
