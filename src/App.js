@@ -10,12 +10,6 @@ import MeraSignup from "./components/MeraSignup";
 import Home_one from "./components/Home_one";
 
 function App() {
-  // const[meraname, setMeraname] = React.useState("")
-
-  // function myChange(e){
-  //   debugger
-  //   setMeraname(e.target.value)
-  // }
   return (
     <div className="App">
       <BrowserRouter>
@@ -27,10 +21,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      {/* <input type="text" value={meraname} onChange={myChange} />
-      <h2>
-        {meraname}
-      </h2> */}
     </div>
   );
 }

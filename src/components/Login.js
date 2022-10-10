@@ -20,7 +20,7 @@ export default function Login() {
 			"username": username,
 			"password": password
 		}
-		axios.post('http://127.0.0.1:8000/api/login/', payload)
+		axios.post('https://salty-mountain-94962.herokuapp.com/api/login/', payload)
 			.then(function (response) {
 				window.localStorage.setItem('Token',response.data.access)
 				window.location="/home"
@@ -31,7 +31,9 @@ export default function Login() {
 	}
 
 	return (
-		<div className="wrapper signIn">
+		<div className='signIn'>
+		
+		<div className="wrapper">
 			<div className="illustration">
 				<img src="https://source.unsplash.com/random" alt="illustration" />
 			</div>
@@ -54,6 +56,7 @@ export default function Login() {
 					Don't have an account ? <Link to="/signup"> Sign In </Link>
 				</p>
 			</div>
+		</div>
 		</div>
 	);
 }
