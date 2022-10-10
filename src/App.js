@@ -7,7 +7,6 @@ import Error from "./components/Error";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signups from "./components/Signup";
 import MeraSignup from "./components/MeraSignup";
-import Home from "./components/home";
 import Home_one from "./components/Home_one";
 
 function App() {
