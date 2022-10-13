@@ -45,7 +45,7 @@ export default function MeraSignup()  {
             "password": password,
             "password2": password2
         }
-        axios.post('https://salty-mountain-94962.herokuapp.com/api/register/', payload)
+        axios.post('https://testingtodolist.herokuapp.com/api/register/', payload)
             .then(function (response) {
                 console.log(response);
                 alert("user created successfully")
