@@ -20,7 +20,7 @@ export default function Login() {
 			"username": username,
 			"password": password
 		}
-		axios.post('https://salty-mountain-94962.herokuapp.com/api/login/', payload)
+		axios.post('https://testingtodolist.herokuapp.com/api/login/', payload)
 			.then(function (response) {
 				window.localStorage.setItem('Token',response.data.access)
 				window.location="/home"
